@@ -1,7 +1,7 @@
 def	all_thing_is_obj(object: any) -> int:
-	if (isinstance(object, str)):
+	if (object.__class__ == str):
 		print(object, "is in the kitchen", ":", object.__class__)
-	elif (isinstance(object, int)):
+	elif (object.__class__ == int):
 		print("Type not found")
 	else:
 		print(object.__class__.__name__.capitalize(), ":", object.__class__)
