@@ -1,7 +1,7 @@
 import sys as sys
 
 
-def count_characters(text: str):
+def count_characters(text: str) -> None:
     """Displays different counters of characters from a string"""
     counter = [0, 0, 0, 0, 0]
 
@@ -24,7 +24,7 @@ def count_characters(text: str):
           counter[2], "digits")
 
 
-def main(av: list):
+def main(av: list) -> int:
     """A character counter program's main function"""
     try:
         if (len(av) < 2):
@@ -33,8 +33,10 @@ def main(av: list):
             count_characters(av[1])
         else:
             raise AssertionError("too many arguments")
+        return (0)
     except BaseException as err:
         print(err.__class__.__name__ + ':', err)
+        return (1)
 
 
 if __name__ == "__main__":
