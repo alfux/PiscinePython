@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+authors = [
+	{name="afuchs", email="afuchs@student.42mulhouse.fr"}
+]
+license = {file="LICENSE"}
+description = "A small package containing only count_in_list custom function"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT Licence",
+	"Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/alfux/PiscinePython/tree/main/Python-0/ex09"
+Issues = "https://github.com/PiscinePython/issues"
