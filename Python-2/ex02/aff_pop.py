@@ -21,7 +21,11 @@ def to_number(x: str) -> float:
 
 def millions(x, pos) -> str:
     """Returns a million unit formatter for the plot's y axis."""
-    return (f"{x * 1e-6:1.0f}M")
+    try:
+        return (f"{x * 1e-6:1.0f}M")
+    except BaseException as err:
+        print(err.__class__.__name__ + ":", err)
+        return (None)
 
 
 def main() -> int:
