@@ -2,6 +2,7 @@ from S1E7 import Baratheon, Lannister
 
 
 def main():
+    """Test program."""
     try:
         Robert = Baratheon("Robert")
         print(Robert.__dict__)

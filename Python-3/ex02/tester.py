@@ -2,6 +2,7 @@ from DiamondTrap import King
 
 
 def main():
+    """Test program."""
     try:
         Joffrey = King("Joffrey")
         print(Joffrey.__dict__)
