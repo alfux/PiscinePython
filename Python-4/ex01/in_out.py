@@ -13,6 +13,7 @@ def outer(x: int | float, function) -> object:
     count = 0
 
     def inner() -> float:
+        """Returns <function> composed with itself * count evaluated in <x>."""
         nonlocal x
         nonlocal count
         x = function(x)

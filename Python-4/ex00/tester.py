@@ -2,6 +2,7 @@ from statistics import ft_statistics
 
 
 def main() -> int:
+    """Makes some tests bruh."""
     try:
         ft_statistics(1, 42, 360, 11, 64, toto="mean", tutu="median",
                       tata="quartile")

@@ -4,6 +4,7 @@ from in_out import pow
 
 
 def main() -> int:
+    """Makes some tests bruh."""
     try:
         my_counter = outer(3, square)
         print(my_counter())
