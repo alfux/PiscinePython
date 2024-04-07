@@ -1,6 +1,6 @@
 class calculator:
     """Process operations on two vectors."""
-    def __init(self):
+    def __init__(self):
         """Instanciate an empty calculator object.."""
         pass
 
