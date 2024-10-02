@@ -1,4 +1,7 @@
-def ft_tqdm(lst: range) -> None:
+from typing import Generator
+
+
+def ft_tqdm(lst: range) -> Generator:
     """Copies the behavior of tqdm from tqdm module"""
     for i in lst:
         idx = lst.index(i)
