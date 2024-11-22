@@ -10,12 +10,10 @@ def pow(x: int | float) -> int | float:
 
 def outer(x: int | float, function) -> object:
     """Creates an iterative composition of <function> evaluated in <x>."""
-    count = 0
 
     def inner() -> float:
         """Returns <function> composed with itself * count evaluated in <x>."""
         nonlocal x
-        nonlocal count
         x = function(x)
         return (x)
 
